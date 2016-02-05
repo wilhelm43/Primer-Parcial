@@ -1,0 +1,36 @@
+package conversion_inglesas;
+
+import java.util.Scanner;
+public class Conversion_Inglesas {
+
+    public static int millas, furlongs, yardas, pies, auxiliar, q;
+   
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        do{
+            System.out.println("Dame las pulgadas a convertir: ");
+            int q = sc.nextInt();
+           
+        }while(q <= 0 || q >= 2000000000);
+        
+        millas = q / 63360;
+        auxiliar = q % 63360;
+        
+        furlongs = auxiliar / 7920;
+        auxiliar = auxiliar % 7920;
+        
+        yardas = auxiliar / 36;
+        auxiliar = auxiliar % 36;
+        
+        pies = auxiliar / 12;
+        auxiliar = auxiliar % 12;
+        
+        System.out.println("millas: " + auxiliar);
+        System.out.println("furlongs: " + furlongs);
+        System.out.println("yardas: " + yardas);
+        System.out.println("pies: " + pies);
+        System.out.println("pulgadas: " + auxiliar);
+    }
+    
+}
