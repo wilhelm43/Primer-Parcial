@@ -1,0 +1,30 @@
+package pitagoras;
+
+import java.util.Scanner;
+
+public class Pitagoras {
+
+    public static int c, m = 0, n, p;
+
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+
+        do {
+            System.out.println("Dame el valor de m: ");
+            m = leer.nextInt();
+        } while (m < 1 || m > 1000000);
+
+        do {
+            System.out.println("Dame el valor de n: ");
+            n = leer.nextInt();
+        } while (n < 1 || n > 1000000);
+
+        for (int a = m; a <= n; a++) {
+            for (int b = m; b <= n; b++) {
+                System.out.println(a + "  " + b);
+            }
+        }
+
+    }
+
+}
