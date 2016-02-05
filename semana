@@ -1,0 +1,193 @@
+package semana;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+import static semana.Semana.a;
+
+public class Semana {
+    public static int a, m, d;
+
+    public static void main(String[] args) {
+    Scanner leer = new Scanner(System.in);
+    Calendar fecha = new GregorianCalendar();
+    String F[]={"Lunes","Martes","Miercoles","Jueves","Viernes","Sadado","Domingo"};
+    
+    int año = fecha.get(Calendar.YEAR);
+    int mes = fecha.get(Calendar.MONTH);
+    int dia = fecha.get(Calendar.DAY_OF_MONTH);
+    System.out.println("Fecha Actual: "
+                           + dia + "/" + (mes+1) + "/" + año);
+    System.out.println("Dame el año: ");
+    int a = leer.nextInt();
+        
+    System.out.println("Dame el mes: ");
+    int m = leer.nextInt();
+        
+    System.out.println("Dame el día: ");
+    int d = leer.nextInt();
+    
+    m=m+10;
+    a=a-1;
+    if(m>2){
+    m=m-2;
+    }else{
+    }
+    
+    int c=a/100;
+    int e=a%100;      
+    
+    int b = (13-1)/5+e/4+c/4;
+    System.out.println("F= ");
+    System.out.println((b+e+d-(c*2))%7);
+        
+    System.out.println("Ingresa el dia de enero: ");
+    int z = leer.nextInt();
+    
+    int x1=1;
+    int x2=2;
+    int x3=3;
+    int x4=4;
+    int x5=5;
+    int x6=6;
+    int x7=7;
+    int x8=8;
+    int x9=9;
+    int x10=10;
+    int x11=11;
+    int x12=12;
+    int x13=13;
+    int x14=14;
+    int x15=15;
+    int x16=16;
+    int x17=17;
+    int x18=18;
+    int x19=19;
+    int x20=20;
+    int x21=21;
+    int x22=22;
+    int x23=23;
+    int x24=24;
+    int x25=25;
+    int x26=26;
+    int x27=27;
+    int x28=28;
+    int x29=29;
+    int x30=30;
+    int x31=31;
+    
+    if(z == x1){
+        System.out.println("viernes");
+    }   
+    if(z == x2){
+        System.out.println("sabado");
+    }   
+    if(z == x3){
+        System.out.println("domigo");
+    }
+   if(z == x4){
+        System.out.println("lunes");
+    }
+    if(z == x5){
+        System.out.println("martes");
+    }
+    if(z == x6){
+        System.out.println("miercoles");
+    }
+    if(z == x7){
+        System.out.println("jueves");
+    }
+    if(z == x8){
+        System.out.println("viernes");
+    }
+    if(z == x9){
+        System.out.println("sabado");
+    }
+    if(z == x10){
+        System.out.println("domigo");
+    }
+    if(z == x11){
+        System.out.println("lunes");
+    }
+    if(z == x12){
+        System.out.println("martes");
+    }
+    if(z == x13){
+        System.out.println("miercoles");
+    }
+    if(z == x14){
+        System.out.println("jueves");
+    }
+    if(z == x15){
+        System.out.println("viernes");
+    }
+    if(z == x16){
+        System.out.println("sabado");
+    }
+    if(z == x17){
+        System.out.println("domingo");
+    }
+    if(z == x18){
+        System.out.println("lunes");
+    }
+    if(z == x19){
+        System.out.println("martes");
+    }
+    if(z == x20){
+        System.out.println("miercoles");
+    }
+    if(z == x21){
+        System.out.println("jueves");
+    }
+    if(z == x22){
+        System.out.println("viernes");
+    }
+    if(z == x23){
+        System.out.println("sabado");
+    }
+    if(z == x24){
+        System.out.println("domigo");
+    }
+    if(z == x25){
+        System.out.println("lunes");
+    }
+    if(z == x26){
+        System.out.println("martes");
+    }
+    if(z == x27){
+        System.out.println("miercoles");
+    }
+    if(z == x28){
+        System.out.println("jueves");
+    }
+    if(z == x29){
+        System.out.println("viernes");
+    }
+    if(z == x30){
+        System.out.println("sabado");
+    }
+    if(z == x31){
+        System.out.println("domingo");
+    }
+
+    
+        
+    
+    
+    
+    
+    
+    
+        
+        
+        
+    
+    
+    
+    
+        
+        
+        
+    }
+    
+}
