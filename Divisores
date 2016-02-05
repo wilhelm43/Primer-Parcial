@@ -1,0 +1,32 @@
+package divisores;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Divisores {
+
+    public static int N, D, n,contador;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Dame el valor de N: ");
+        String num = bf.readLine();
+        N = Integer.parseInt(num);
+        
+
+        System.out.println();
+
+        int D = 0;
+        for (n = 1; n <= n; n++) {
+            if (N % n == 0) {
+                System.out.println(n);
+                D++;
+            }
+
+        }
+        System.out.println("Total: " + D + " divisores");
+
+    }
+}
