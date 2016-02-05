@@ -1,0 +1,45 @@
+
+package basura2;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class Basura2 {
+
+    public static void main(String[] args) throws IOException {
+        
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        
+        System.out.println("Dame el tamaño de la matriz");
+        int tam = Integer.parseInt(bf.readLine());
+        
+        int[][] matriz = new int[3][3]; //declaracion bidimensional
+        String num;
+        
+        for(int i = 0; i < tam; i++){ //filas
+            for(int j = 0; j < tam; j++){
+                System.out.println("Dame la posicion-->" + (i+1) + "," + (j+1));
+                //num = bf.readLine();
+                matriz[i][j] = Integer.parseInt(bf.readLine());
+            }
+            
+        }
+        
+        System.out.println("");System.out.println("");
+        
+        for(int i = 0; i < tam; i++){ //fias
+            for(int j = tam-1; j >= 0; j--){ //columnas
+                if(i == j){
+                    System.out.println(matriz[i][j] + ", ");
+                }
+                System.out.println("");
+            }
+        }
+        
+       
+        
+    }
+    
+}
