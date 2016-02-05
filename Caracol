@@ -1,0 +1,29 @@
+package caracol;
+
+import java.util.Scanner;
+public class Caracol {
+
+    public static int a, b, c;
+    public static void main(String[] args) {
+    Scanner leer = new Scanner(System.in);
+    Scanner lol = new Scanner(System.in);
+    Scanner ja = new Scanner(System.in);
+    
+    
+    System.out.println("Dame la longitud del agujero: ");
+    int a = leer.nextInt();
+        System.out.println("¿Cuanto subio el caracol?: ");
+    int b = lol.nextInt();
+        System.out.println("¿Cuanto baja el caracol?: ");
+    int c = ja.nextInt();
+    
+    if(b>=a-c){
+            System.out.println("Escapa el caracol");
+    }else{
+        System.out.println("El caracol se mantiene atrapado");
+    }
+        
+        
+    }
+    
+}
