@@ -1,0 +1,44 @@
+package conversiondos;
+
+//31 41 59 26 57
+
+import java.util.Scanner;
+public class ConversionDos {
+
+    public static int galón, pinta, taza, onza, cuartas, a, aux;
+   
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        
+                do{
+            System.out.println("Dame una cantidad: ");
+            int a = leer.nextInt();
+           
+        }while(a <= 0 || a >= 1000);
+                
+        galón = a / 31;      
+        aux = a % 31;
+        
+        pinta = aux / 41;
+        aux = aux % 41;
+        
+        taza = aux / 59;
+        aux = aux % 59;
+        
+        onza = aux / 26;
+        aux = aux % 26;
+        
+        cuartas = aux / 57;
+        aux = aux % 26;
+        
+        System.out.println("Galón: " + aux);
+        System.out.println("Pinta: " + aux);
+        System.out.println("Taza: " + aux);
+        System.out.println("Onza: " + aux);
+        System.out.println("Cuartas: " + aux);
+                
+                
+        
+    }
+    
+}
