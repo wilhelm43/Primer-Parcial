@@ -1,0 +1,58 @@
+package placas;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Placas {
+
+    public static int a, b, c, d, A, B, C, D, aux;
+
+    public static void main(String[] args) throws IOException {
+        System.out.println("Entrada");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        do {
+            System.out.println("Dame a: ");
+            a = Integer.parseInt(br.readLine());
+        } while (a < 0 || a > 9);
+
+        do {
+            System.out.println("Dame b: ");
+            b = Integer.parseInt(br.readLine());
+        } while (b < 0 || b > 9);
+
+        do {
+            System.out.println("Dame c: ");
+            c = Integer.parseInt(br.readLine());
+        } while (c < 0 || c > 9);
+
+        do {
+            System.out.println("Dame d: ");
+            d = Integer.parseInt(br.readLine());
+        } while (d < 0 || d > 9);
+
+        if (a == 0) {
+            a = 1;
+        }
+
+        if (b == 0) {
+            b = 1;
+        }
+
+        if (c == 0) {
+            c = 1;
+        }
+
+        if (d == 0) {
+            d = 1;
+        }
+
+        aux = a * b * c * d;
+        System.out.println("Salida");
+        System.out.println(aux);
+        aux++;
+
+    }
+
+}
