@@ -1,0 +1,46 @@
+package isoceles;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Isoceles {
+
+    public static int m, n, t;
+
+    public static void main(String args[]) throws IOException {
+        System.out.println("UCQ™");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        do {
+            System.out.println("Dame m: ");
+            m = Integer.parseInt(br.readLine());
+        } while (m < 1 || m > 1000);
+
+        do {
+            System.out.println("Dame n: ");
+            n = Integer.parseInt(br.readLine());
+        } while (m < 1 || m > 1000);
+
+//         for (int i = m) {// cuando i sea igual a m entonces i sera mayor o igual que n y este incrementara
+//
+//            for (int j = i) {// cuando j sea igual a i entonces j sera mayor o igual que n , j incrementara
+//
+//                for (int k = j) { // cuando k sea igual a j  entonces k sera mayor o igual que n , k incrementara
+//
+//                    if ((i + j) > k && (i + k) > j && (j + k) > i) {
+//
+//                        t++;
+//                    }
+//
+//                }
+//
+//            }
+//
+//        }
+        t = m * n;
+        System.out.println(t);
+        t++;
+    }
+
+}
